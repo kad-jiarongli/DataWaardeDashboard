@@ -11,6 +11,13 @@ import { AbstractComponent } from './abstract/abstract.component';
 import { DataModelBrowserComponent } from './data-model-browser/data-model-browser.component';
 import { DataStoryBrowserComponent } from './data-story-browser/data-story-browser.component';
 import { NavigationComponent } from './navigation/navigation.component';
+import { ServiceUptimeComponent } from './service-uptime/service-uptime.component';
+import { UpdateFrequencyComponent } from './update-frequency/update-frequency.component';
+import { ApiHintsComponent } from './api-hints/api-hints.component';
+import { DataViewerComponent } from './data-viewer/data-viewer.component';
+import { StarRatingComponent } from './star-rating/star-rating.component';
+import { MachineReadableComponent } from './machine-readable/machine-readable.component';
+import { LinksComponent } from './links/links.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +30,14 @@ import { NavigationComponent } from './navigation/navigation.component';
          AbstractComponent,
          DataModelBrowserComponent,
          DataStoryBrowserComponent,
-         NavigationComponent
+         NavigationComponent,
+         ServiceUptimeComponent,
+         UpdateFrequencyComponent,
+         ApiHintsComponent,
+         DataViewerComponent,
+         StarRatingComponent,
+         MachineReadableComponent,
+         LinksComponent
   ],
   imports: [
     BrowserModule

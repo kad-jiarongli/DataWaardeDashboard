@@ -1,18 +1,37 @@
 <div class="matric">
     <div class="card text-center">
         <div class="card-header">
-          <ul class="nav nav-tabs card-header-tabs">
-            <li class="nav-item">
-              <a class="nav-link active" href="#">WMS</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">WFS</a>
-            </li>
-          </ul>
+            <ul class="nav nav-tabs card-header-tabs">
+                <li class="nav-item">
+                    <a class="nav-link active" href="#">WMS</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">WFS</a>
+                </li>
+            </ul>
         </div>
         <div class="card-body">
-          lllsldkldfkfjfkfk
+            <div class="block">
+                <div class="matric-holder" id="su-uf">
+                    <app-service-uptime></app-service-uptime>
+                    <app-update-frequency></app-update-frequency>
+                </div>
+                <div class="chart-holder">
+                    <app-api-hints></app-api-hints>
+                </div>
+                
+            </div>
+            <app-data-viewer></app-data-viewer>
+            <div class="block">
+                <div id="star-holder">
+                    <app-star-rating></app-star-rating>
+                </div>
+                <div id="machread-holder">
+                    <app-machine-readable></app-machine-readable>
+                </div>
+                
+            </div>
+            
         </div>
-      </div>
+    </div>
 </div>
-

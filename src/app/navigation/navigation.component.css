@@ -1,5 +1,32 @@
 .matric {
     background-color: white;
     margin:8px;
-    padding:5px
+    /* padding:5px */
+}
+.block {
+    display:flex;
+    justify-content: space-between;
+}
+.card-body {
+    background-color: #bfe0e5;
+    padding:10px 0 0 0;
+    
+}
+
+#su-uf {
+    width:35%;
+    height:250px
+    /* background-color: cornflowerblue; */
+}
+.chart-holder {
+    width:65%;
+    height:250px
+    /* background-color: burlywood; */
+}
+
+#star-holder{
+    width:50%;
+}
+#machread-holder {
+    width:50%;
 }
