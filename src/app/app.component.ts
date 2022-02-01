@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import "kadaster-huisstijl/dist/css/kadaster-private.min.css";
 
 @Component({
   selector: 'app-root',

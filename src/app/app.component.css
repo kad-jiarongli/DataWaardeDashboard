@@ -1,0 +1,21 @@
+main {
+    margin-left:5%;
+    margin-right:5%;
+    background-color: #bfe0e5;
+    display:flex;
+    justify-content: space-between;
+}
+ .left-section {
+     width:25%
+ }
+
+ .middle-section {
+    width:45%
+}
+
+.right-section {
+    width:30%
+}
+
+ 
+ 
