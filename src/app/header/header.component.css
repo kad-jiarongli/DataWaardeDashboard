@@ -5,7 +5,7 @@ header {
     margin-bottom: 1%;
     width:auto;
     display:flex;
-    justify-content:left
+    /* justify-content:left */
 }
 h1 {
     color:white;
@@ -23,6 +23,5 @@ h1 {
     position:absolute;
     left:50%
 } */
-#title {
-    margin-left:30px ;
-}
+
+

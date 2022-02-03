@@ -8,3 +8,10 @@
     overflow: scroll;
     height:200px
 }
+article {
+    margin:0.75rem
+}
+h3 {
+    font-size: 1.1875rem;
+    
+}

@@ -2,11 +2,23 @@
     <div class="matric-holder" id="su-uf">
         <div class="matric" id="su">
             <h3>Service Uptime</h3>
-            <span>{{suValue}}%</span>
+            <span id="service-uptime">{{suValue}}%</span>
         </div>
+        <!-- <article class="card same-height-child" aria-labelledby="card-heading_cards-0">
+            <div class="card-body" >
+                <h3 id="card-heading_cards-0" class="card-title" >Service Uptime</h3>
+                <p class="card-text">{{suValue}}%</p> 
+            </div>
+        </article>
+        <article class="card same-height-child" aria-labelledby="card-heading_cards-0">
+            <div class="card-body" >
+                <h3 id="card-heading_cards-0" class="card-title" >Update Frequency</h3>
+                <p class="card-text">{{ufValue}}</p> 
+            </div>
+        </article> -->
         <div class="matric" id="uf">
             <h3>Update Frequency</h3>
-            <span>{{ufValue}}%</span>
+            <span id="update-frequency">{{ufValue}}</span>
         </div>
     </div>
     <div class="chart-holder">
@@ -19,13 +31,13 @@
     <div id="star-holder">
         <div class="matric" id="sr">
             <h3>at Least 4 Star Rating</h3>
-            <span class="fal fa-check" aria-hidden="true"></span>
+            <span class="fal fa-check" aria-hidden="true" id="star-rating" ></span>
         </div>
     </div>
     <div id="machread-holder">
         <div class="matric" id="mh">
             <h3>Machine Readable</h3>
-            <span class="fal fa-check" aria-hidden="true"></span>
+            <span class="fal fa-check" aria-hidden="true" id="machine-readable"></span>
         </div>
     </div>
     
