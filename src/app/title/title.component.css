@@ -1,5 +1,9 @@
-div {
-    background-color: white;
-    margin: 8px;
-    padding:5px;
+article {
+    /* background-color: white; */
+    margin: 0.75rem;
+    /* padding:5px; */
+}
+h2 {
+    /* margin:3px 0; */
+    font-size: 1.7rem;
 }

@@ -1,9 +1,10 @@
 .matric {
     background-color: white;
-    margin:8px 9px 8px 0;
+    margin:8px 0 8px 0;
     padding:5px
 }
 .viewer {
     margin-left:auto;
-    margin-right:auto
+    margin-right:auto;
+    border-width: 1px;
 }

@@ -6,8 +6,11 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./links.component.css']
 })
 export class LinksComponent implements OnInit {
+  
 
-  constructor() { }
+  constructor() {
+    
+   }
 
   ngOnInit(): void {
   }

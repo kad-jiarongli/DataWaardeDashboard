@@ -1,19 +1,8 @@
-.matric {
-    background-color: white;
-    margin:8px;
-    padding:5px
-}
 
-span {
-    display:inline-block;
-    margin:2px 3px;
-    font-size: 12px;
-    
-}
-#keyword {
-    background-color: #f6d4bc;
-}
-
-#theme {
-    background-color: #d4e4be;
+button {
+    height:1.6rem;
+    line-height: 1.3rem;
+    font-size:0.75rem;
+    padding:0.15rem;
+    margin:0.16rem
 }

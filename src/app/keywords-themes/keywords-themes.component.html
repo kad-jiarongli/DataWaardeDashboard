@@ -1,9 +1,14 @@
-<div class="matric">
-<span id="keyword" *ngFor="let keyword of keywords">
+
+    <button type="button" class="btn btn-outline-warning" *ngFor="let keyword of keywords" >
+        <span class="btn-text">{{keyword}}</span>
+    </button>
+<!-- <span id="keyword" *ngFor="let keyword of keywords">
     {{keyword}}
-</span>
+</span> -->
 <br>
-<span id="theme" *ngFor="let theme of themes">
+<button type="button" class="btn btn-outline-success" *ngFor="let theme of themes" >
+    <span class="btn-text">{{theme}}</span>
+</button>
+<!-- <span id="theme" *ngFor="let theme of themes">
     {{theme}}
-</span>
-</div>
+</span> -->

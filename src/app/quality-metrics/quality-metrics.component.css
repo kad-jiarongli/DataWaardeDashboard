@@ -30,3 +30,31 @@
 #machread-holder {
     width:50%;
 }
+
+#su {
+        margin:8px 8px 8px 0;
+        padding:5px;
+        height:45%;
+}
+
+#uf {
+    margin:8px 8px 8px 0;
+    padding:5px;
+    height:45%;
+}
+
+#sr {
+    margin:8px 8px 8px 0;
+    padding:5px;
+    height:150px
+}
+#mh {
+    margin:8px 0 8px 8px;
+    padding:5px;
+    height:150px
+}
+
+h3 {
+    font-size: 1.1875rem;
+    margin-top: 1.125rem;
+}

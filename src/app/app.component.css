@@ -5,16 +5,17 @@ main {
     display:flex;
     justify-content: space-between;
 }
+
  .left-section {
-     width:25%
+     width:27%
  }
 
  .middle-section {
-    width:45%
+    width:48%
 }
 
 .right-section {
-    width:30%
+    width:25%
 }
 
  
