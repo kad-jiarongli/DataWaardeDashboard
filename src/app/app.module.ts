@@ -19,6 +19,9 @@ import { LinksComponent } from './links/links.component';
 import { CommentComponent } from './comment/comment.component';
 import { QualityMetricsComponent } from './quality-metrics/quality-metrics.component';
 
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import {NgxChartsModule} from '@swimlane/ngx-charts'
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -38,7 +41,10 @@ import { QualityMetricsComponent } from './quality-metrics/quality-metrics.compo
          QualityMetricsComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+
+    BrowserAnimationsModule,
+    NgxChartsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
