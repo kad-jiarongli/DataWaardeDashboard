@@ -6,3 +6,10 @@ button {
     padding:0.15rem;
     margin:0.16rem
 }
+a {
+    color: #547B1C;
+    text-decoration: none; /* no underline */
+  }
+a:hover {
+    color:white
+}

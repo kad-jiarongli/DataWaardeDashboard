@@ -1,14 +1,22 @@
-
-    <button type="button" class="btn btn-outline-warning" *ngFor="let keyword of keywords" >
-        <span class="btn-text">{{keyword}}</span>
+<div *ngIf="keywordsResults$ | async as keywordsResults " >
+    <button type="button" class="btn btn-outline-warning"  *ngFor="let keywordsResult of keywordsResults" >
+        <span class="btn-text" [innerHTML]="keywordsResult.keyword.value"></span>
     </button>
+</div>
 <!-- <span id="keyword" *ngFor="let keyword of keywords">
     {{keyword}}
 </span> -->
-<br>
-<button type="button" class="btn btn-outline-success" *ngFor="let theme of themes" >
+
+<div *ngIf="themesResults$ | async as themesResults " >
+    <button type="button" class="btn btn-outline-success" *ngFor="let themesResult of themesResults" >
+        <a href="{{themesResult.theme.value}}">
+        <span class="btn-text" [innerHTML]="themesResult.themeLabel.value"></span>
+    </a>
+    </button>
+</div>
+<!-- <button type="button" class="btn btn-outline-success" *ngFor="let theme of themes" >
     <span class="btn-text">{{theme}}</span>
-</button>
+</button> -->
 <!-- <span id="theme" *ngFor="let theme of themes">
     {{theme}}
 </span> -->

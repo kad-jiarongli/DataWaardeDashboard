@@ -1,0 +1,22 @@
+<!-- title and keyworkds/themes-->
+<article class="card same-height-child" aria-labelledby="card-heading_cards-0">
+    <div class="card-body" >
+        <h2 id="card-heading_cards-0" class="card-title" *ngIf="results$ | async as results" >{{results.title.value}} </h2>
+        <app-keywords-themes></app-keywords-themes> 
+    </div>
+</article>
+<!-- abstract -->
+<article class="card same-height-child" id="abs-holder" aria-labelledby="card-heading_cards-0">
+    <div class="card-body overflow-auto" >
+        <h3 id="card-heading_cards-0" class="card-title">Abstract</h3>
+        <p class="card-text" *ngIf="results$ | async as results" [innerHTML]="results.abstract.value">
+        </p>
+    </div>
+</article>
+<!-- data model -->
+<app-data-model-browser></app-data-model-browser>
+<!-- comment -->
+<article class="card same-height-child"id="com-holder" aria-labelledby="card-heading_cards-0">
+    <div class="card-body overflow-auto"*ngIf="results$ | async as results" [innerHTML]="results.comment.value" >
+    </div>
+</article>
