@@ -1,39 +1,32 @@
-
+<!-- license information -->
 <article class="card same-height-child" aria-labelledby="card-heading_cards--list-0">
-    <div class="card-body">
+    <div class="card-body" >
         <h3 id="card-heading_cards--list-0" class="card-title">License Information</h3>
-        <ul class="card-text fa-ul">
-            <li>
-                <a href="#"><span class="fa-li far fa-angle-right" aria-hidden="true"></span>List item link 1</a>
-            </li>
-            <li>
-                <a href="#"><span class="fa-li far fa-angle-right" aria-hidden="true"></span>List item link 2</a>
-            </li>
-            <li>
-                <a href="#"><span class="fa-li far fa-angle-right" aria-hidden="true"></span>List item link 3</a>
+        <ul class="card-text fa-ul" *ngIf="licensesResults$ | async as licensesResults " >
+            <li *ngFor="let licensesResult of licensesResults">
+                <a href="{{licensesResult.license.value}}"><span class="fa-li far fa-angle-right" aria-hidden="true" ></span>{{licensesResult.licenseLabel.value}}</a>
             </li>
         </ul>
     </div>
 </article>
+<!-- catelogue -->
 <article class="card same-height-child" aria-labelledby="card-heading_cards--list-0">
     <div class="card-body">
-        <h3 id="card-heading_cards--list-0" class="card-title">Catelogue</h3>
+        <h3 id="card-heading_cards--list-0" class="card-title">Catalogue</h3>
         <ul class="card-text fa-ul">
             <li>
-                <a href="https://imbag.github.io/catalogus/"><span class="fa-li far fa-angle-right" aria-hidden="true"></span>Catelogue Link</a>
+                <a href="https://imbag.github.io/catalogus/"><span class="fa-li far fa-angle-right" aria-hidden="true"></span>Catalogue Link</a>
             </li>
         </ul>
     </div>
 </article>
+<!-- Authoritative Provenance -->
 <article class="card same-height-child" aria-labelledby="card-heading_cards--list-0">
     <div class="card-body">
         <h3 id="card-heading_cards--list-0" class="card-title">Authoritative Provenance</h3>
-        <ul class="card-text fa-ul">
+        <ul class="card-text fa-ul" *ngIf="provenanceResult$ | async as provenanceResult ">
             <li>
-                <a href="#"><span class="fa-li far fa-angle-right" aria-hidden="true"></span>Link1</a>
-            </li>
-            <li>
-                <a href="#"><span class="fa-li far fa-angle-right" aria-hidden="true"></span>Link2</a>
+                <a href="{{provenanceResult.provenance.value}}"><span class="fa-li far fa-angle-right" aria-hidden="true"></span>{{provenanceResult.label.value}}</a>
             </li>
         </ul>
     </div>

@@ -42,7 +42,27 @@ export interface CommoninfoBinding {
 
   }
 
-  export interface Keywords {
-    
+  export interface MeasurementBinding {
+    atLeast4Stars:{
+      type:string,
+      datatype:string,
+      value:boolean
+    },
+    distName:{
+      type:string,
+      value:string,
+      "xml:lang":string
+    },
+    mechineReadable: {
+      type:string,
+      datatype:string,
+      value:boolean
+    },
+    serviceUptime: {
+      type:string,
+      datatype:string,
+      value:number
+    }
+
 
   }

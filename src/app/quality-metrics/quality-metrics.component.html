@@ -1,32 +1,34 @@
-<div class="block">
+<div class="block" *ngIf="mWmsResult$ | async as mWmsResult">
+
     <div class="matric-holder" id="su-uf">
         <div class="matric" id="su">
             <h3>Service Uptime</h3>
-            <span id="service-uptime">{{suValue}}%</span>
+            <span id="service-uptime">{{mWmsResult.serviceUptime.value}}%</span>
         </div>
-        <div class="matric" id="uf">
+        <div class="matric" id="uf" >
             <h3>Update Frequency</h3>
-            <span id="update-frequency">{{ufValue}}</span>
+            <span id="update-frequency" *ngIf="commoninfoResult$ | async as commoninfoResult">{{commoninfoResult.accuralPeriodicity.value}}</span>
         </div>
     </div>
     <div class="chart-holder">
         <app-api-hints></app-api-hints>
     </div>
-    
 </div>
 <app-data-viewer></app-data-viewer>
-<div class="block">
+<div class="block"*ngIf="mWmsResult$ | async as mWmsResult">
     <div id="star-holder">
         <div class="matric" id="sr">
             <h3>At Least 4 Star Rating</h3>
-            <span class="fal fa-check" aria-hidden="true" id="star-rating" ></span>
+            <span class="fal fa-check" aria-hidden="true" *ngIf="mWmsResult.atLeast4Stars.value==true"></span>
+            <span class="fal fa-times" aria-hidden="true" *ngIf="mWmsResult.atLeast4Stars.value==false"></span>
         </div>
     </div>
     <div id="machread-holder">
         <div class="matric" id="mh">
             <h3>Machine Readable</h3>
-            <span class="fal fa-check" aria-hidden="true" id="machine-readable"></span>
+            <span class="fal fa-check" aria-hidden="true" *ngIf="mWmsResult.mechineReadable.value==true"></span>
+            <span class="fal fa-times" aria-hidden="true" *ngIf="mWmsResult.mechineReadable.value==false"></span>
         </div>
     </div>
-    
+
 </div>

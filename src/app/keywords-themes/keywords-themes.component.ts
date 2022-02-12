@@ -9,7 +9,7 @@ import { Subject } from 'rxjs';
 })
 export class KeywordsThemesComponent implements OnInit {
   // keywords: string [];
-  themes: string[];
+  //themes: string[];
   keywordsResults$: Subject<any[]>;
   themesResults$: Subject<any[]>;
 
@@ -43,13 +43,13 @@ export class KeywordsThemesComponent implements OnInit {
     //   "e-government",
     //   "gebouw"
     // ]
-    this.themes = [
-      "location",
-      "planningCadastre",
-      "bu",
-      "structure",
-      "national"
-    ]
+    // this.themes = [
+    //   "location",
+    //   "planningCadastre",
+    //   "bu",
+    //   "structure",
+    //   "national"
+    // ]
   }
 
   ngOnInit(): void {

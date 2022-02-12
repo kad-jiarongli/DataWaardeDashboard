@@ -70,16 +70,16 @@ span {
     color:#70a326
 }
 
-#star-rating {
+.fa-check {
     display: inline-block;
     padding:1.5rem;
     color:#70a326;
+    font-size:3.5rem
+}
+.fa-times {
+    display: inline-block;
+    padding:1.5rem;
+    color:#d52b1e;
     font-size:3.5rem
 }
 
-#machine-readable {
-    display: inline-block;
-    padding:1.5rem;
-    color:#70a326;
-    font-size:3.5rem
-}

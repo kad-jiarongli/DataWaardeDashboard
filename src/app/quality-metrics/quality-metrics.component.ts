@@ -1,4 +1,7 @@
+import { MeasurementBinding,CommoninfoBinding } from './../model/binding';
 import { Component, OnInit } from '@angular/core';
+import {SparqlService} from '../sparql.service';
+import {Subject} from 'rxjs';
 
 @Component({
   selector: 'app-quality-metrics',
@@ -6,19 +9,25 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./quality-metrics.component.css']
 })
 export class QualityMetricsComponent implements OnInit {
-  suValue:number;
-  ufValue:string;
-  starRating:boolean;
-  machRead: boolean
+  mWmsResult$: Subject<MeasurementBinding>;
+  commoninfoResult$: Subject<CommoninfoBinding>;
 
-  constructor() {
-    this.suValue=99.8;
-    this.ufValue="daily";
-    this.starRating=true;
-    this.machRead=true;
+  constructor(public sparql: SparqlService) {
+    this.mWmsResult$ = this.sparql.measurementWms$;
+    this.commoninfoResult$=this.sparql.commonInfo$;
+    
    }
 
   ngOnInit(): void {
-  }
+    this.sparql.getMeasurement();
+    this.sparql.getCommoninfo();
+    
+    this.sparql.measurementWms$.subscribe(results => {
+      console.log(results);
+    
+  });
+  
+}
+
 
 }
