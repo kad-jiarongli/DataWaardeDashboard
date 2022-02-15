@@ -1,0 +1,22 @@
+<!-- license information -->
+<article class="card same-height-child" aria-labelledby="card-heading_cards--list-0">
+    <div class="card-body" >
+        <h3 id="card-heading_cards--list-0" class="card-title">Licentie Informatien</h3>
+        <ul class="card-text fa-ul" *ngIf="licensesResults$ | async as licensesResults " >
+            <li *ngFor="let licensesResult of licensesResults">
+                <a href="{{licensesResult.license.value}}"><span class="fa-li far fa-angle-right" aria-hidden="true" ></span>{{licensesResult.licenseLabel.value}}</a>
+            </li>
+        </ul>
+    </div>
+</article>
+<!-- catelogue -->
+<article class="card same-height-child" aria-labelledby="card-heading_cards--list-0">
+    <div class="card-body">
+        <h3 id="card-heading_cards--list-0" class="card-title">Catalogus</h3>
+        <ul class="card-text fa-ul">
+            <li>
+                <a href="https://imbag.github.io/catalogus/"><span class="fa-li far fa-angle-right" aria-hidden="true"></span>Catalogue Link</a>
+            </li>
+        </ul>
+    </div>
+</article>

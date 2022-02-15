@@ -8,20 +8,20 @@ import { Subject } from 'rxjs';
   styleUrls: ['./links.component.css']
 })
 export class LinksComponent implements OnInit {
-  licensesResults$: Subject<any[]>;
+  // licensesResults$: Subject<any[]>;
   provenanceResult$: Subject<any>;
   
 
   constructor(public sparql: SparqlService) {
-    this.sparql.getLicenses();
+    // this.sparql.getLicenses();
     this.sparql.getProvenance();
-    this.sparql.licenses$.subscribe(results => {
-      console.log(results);
-    });
+    // this.sparql.licenses$.subscribe(results => {
+    //   console.log(results);
+    // });
     this.sparql.provenance$.subscribe(results => {
       console.log(results);
     });
-    this.licensesResults$ = this.sparql.licenses$;
+    // this.licensesResults$ = this.sparql.licenses$;
     this.provenanceResult$ = this.sparql.provenance$;
     
    }

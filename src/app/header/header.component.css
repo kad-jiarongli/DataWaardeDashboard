@@ -2,7 +2,7 @@ header {
     background-color: #008dc9;
     margin-left:5%;
     margin-right:5%;
-    margin-bottom: 1%;
+    margin-bottom:0.5rem;
     width:auto;
     display:flex;
     /* justify-content:left */

@@ -24,6 +24,7 @@ import { NgxChartsModule } from '@swimlane/ngx-charts'
 
 import { HttpClientModule } from '@angular/common/http';
 import { BasicInfoComponent } from './basic-info/basic-info.component';
+import { LicenseComponent } from './license/license.component';
 
 @NgModule({
   declarations: [
@@ -38,7 +39,8 @@ import { BasicInfoComponent } from './basic-info/basic-info.component';
     DataViewerComponent,
     LinksComponent,
     QualityMetricsComponent,
-    BasicInfoComponent
+    BasicInfoComponent,
+    LicenseComponent
   ],
   imports: [
     BrowserModule,

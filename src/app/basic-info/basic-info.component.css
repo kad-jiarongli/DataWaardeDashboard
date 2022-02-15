@@ -10,9 +10,10 @@ h2 {
 }
 /* abstract */
 #abs-holder {
-    height: 300px;
+    height: 25rem;
 
 }
+
 
 h3 {
     font-size: 1.1875rem;
@@ -24,7 +25,7 @@ p {
 }
 /* comment */
 #com-holder {
-    height: 300px;
+    height: 18rem;
 
 }
 
